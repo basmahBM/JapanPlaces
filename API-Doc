@@ -1,0 +1,82 @@
+APIs:
+
+1) Login
+   - URL: http://homestead.test/api/login
+   - input email, password
+   
+2) Me:
+   - URL: http://homestead.test/api/me
+   - input: token
+
+3) refresh token
+   - URL: http://homestead.test/api/refresh
+   - input: token
+
+4) Logout:
+  - URL: http://homestead.test/api/logout
+  - input: token
+
+5) get All Cities
+  - URL: http://homestead.test/api/cities
+   - input: token
+
+6) Add a city:
+   - URL: http://homestead.test/api/cities/create
+   - input: token , name_en , image_uri
+   
+7) show city:
+   - URL: http://homestead.test/api/cities/{id}
+   - input: token
+  
+8) Update a city
+  - URL: http://homestead.test/api/cities/update/{id}
+  - input: token , name_en , Image_uri
+
+9) Delete a city
+   - URL: http://homestead.test/api/delete/{id}
+   - input: token 
+
+10) Get city places
+   - URL: http://homestead.test/api/cities/places/{id}
+   - input: token
+
+11) get All places
+   - URL: http://homestead.test/api/places
+   - input: token
+
+12) Add a place
+   - URL: http://homestead.test/api/places/create
+   - input: token , name_en , description, long , lat , image_uri , city_id , category_id
+      
+13) show place:
+   - URL: http://homestead.test/api/places/{id}
+   - input: token
+  
+
+13) Update a place
+    - URL: http://homestead.test/api/places/update/{id}
+   - input: token , name_en , description, long , lat , image_uri , city_id , category_id
+
+
+14) Delete a place
+    - URL: http://homestead.test/api/places/delete/{id}
+   - input: token
+
+15) Find a place by name
+    - URL: http://homestead.test/api/places/search
+   - input: token , keyword
+
+16) Get User Favorite places
+  - URL: http://homestead.test/api/userPlaces
+  - input: token 
+
+17) Add a place to favorite
+   - URL: http://homestead.test/api/userPlaces/add
+   - input: token , place_id
+   
+18) Remove a place form favorite
+   - URL: http://homestead.test/api/userPlaces/delete
+   - input: token , place_id
+   
+ 
+ 
