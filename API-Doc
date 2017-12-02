@@ -1,80 +1,80 @@
-APIs:
+APIs ( I used the POST method with all of the APIS ):
 
-1) Login
+1) Login (Method: POST)
    - URL: http://homestead.test/api/login
    - input email, password
    
-2) Me:
+2) Me (Method: POST):
    - URL: http://homestead.test/api/me
    - input: token
 
-3) refresh token
+3) refresh token (Method: POST)
    - URL: http://homestead.test/api/refresh
    - input: token
 
-4) Logout:
+4) Logout (Method: POST):
   - URL: http://homestead.test/api/logout
   - input: token
 
-5) get All Cities
+5) get All Cities (Method: POST)
   - URL: http://homestead.test/api/cities
    - input: token
 
-6) Add a city:
+6) Add a city (Method: POST):
    - URL: http://homestead.test/api/cities/create
    - input: token , name_en , image_uri
    
-7) show city:
+7) show city (Method: POST):
    - URL: http://homestead.test/api/cities/{id}
    - input: token
   
-8) Update a city
+8) Update a city (Method: POST)
   - URL: http://homestead.test/api/cities/update/{id}
   - input: token , name_en , Image_uri
 
-9) Delete a city
+9) Delete a city (Method: POST)
    - URL: http://homestead.test/api/delete/{id}
    - input: token 
 
-10) Get city places
+10) Get city places (Method: POST)
    - URL: http://homestead.test/api/cities/places/{id}
    - input: token
 
-11) get All places
+11) get All places (Method: POST)
    - URL: http://homestead.test/api/places
    - input: token
 
-12) Add a place
+12) Add a place (Method: POST)
    - URL: http://homestead.test/api/places/create
    - input: token , name_en , description, long , lat , image_uri , city_id , category_id
       
-13) show place:
+13) show place (Method: POST):
    - URL: http://homestead.test/api/places/{id}
    - input: token
   
 
-13) Update a place
+13) Update a place (Method: POST)
     - URL: http://homestead.test/api/places/update/{id}
    - input: token , name_en , description, long , lat , image_uri , city_id , category_id
 
 
-14) Delete a place
+14) Delete a place (Method: POST)
     - URL: http://homestead.test/api/places/delete/{id}
    - input: token
 
-15) Find a place by name
+15) Find a place by name (Method: POST)
     - URL: http://homestead.test/api/places/search
    - input: token , keyword
 
-16) Get User Favorite places
+16) Get User Favorite places (Method: POST)
   - URL: http://homestead.test/api/userPlaces
   - input: token 
 
-17) Add a place to favorite
+17) Add a place to favorite (Method: POST)
    - URL: http://homestead.test/api/userPlaces/add
    - input: token , place_id
    
-18) Remove a place form favorite
+18) Remove a place form favorite (Method: POST)
    - URL: http://homestead.test/api/userPlaces/delete
    - input: token , place_id
    
